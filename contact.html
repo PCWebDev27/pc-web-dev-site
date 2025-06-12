@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - PC Web Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle light/dark theme">🌙</button>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">PC Web Dev</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section container fade-in delay-1">
+      <h2 class="section-title">Get in Touch</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your full name" />
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="your.email@example.com"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="How can we help you?"
+        ></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formResponse" class="form-response" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      &copy; 2025 PC Web Dev. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

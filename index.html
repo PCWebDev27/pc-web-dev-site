@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PC Web Dev - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle light/dark theme">🌙</button>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">PC Web Dev</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h2 class="fade-in delay-1">Professional Web Development</h2>
+        <p class="fade-in delay-2">
+          Building modern, responsive, and beautiful websites tailored for your business.
+        </p>
+        <a href="contact.html" class="btn fade-in delay-3">Get Started</a>
+      </div>
+    </section>
+
+    <section class="services container">
+      <h2 class="section-title fade-in delay-1">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card fade-in delay-2">
+          <!-- Responsive Design SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4 6h16v2H4zM4 12h16v2H4zM4 18h16v2H4z" />
+          </svg>
+          <h3>Responsive Design</h3>
+          <p>Seamless experience across all devices — mobiles, tablets, desktops.</p>
+        </div>
+        <div class="service-card fade-in delay-3">
+          <!-- SEO SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"
+            />
+            <path d="M12 6a6 6 0 00-6 6h2a4 4 0 018 0h2a6 6 0 00-6-6z" />
+          </svg>
+          <h3>SEO Optimization</h3>
+          <p>Boost your website’s ranking and visibility on search engines.</p>
+        </div>
+        <div class="service-card fade-in delay-4">
+          <!-- Support SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2a10 10 0 100 20 10 10 0 000-20zM7 14v-4h2v4H7zm6 0v-4h2v4h-2z"
+            />
+          </svg>
+          <h3>24/7 Support</h3>
+          <p>Reliable assistance whenever you need it, for peace of mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-preview container">
+      <h2 class="section-title fade-in delay-1">Portfolio Preview</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item fade-in delay-2">
+          <img src="images/portfolio1.jpg" alt="Local Bakery Website" />
+          <p>Local Bakery Website</p>
+        </div>
+        <div class="portfolio-item fade-in delay-3">
+          <img src="images/portfolio2.jpg" alt="Fitness Trainer Landing Page" />
+          <p>Fitness Trainer Landing Page</p>
+        </div>
+        <div class="portfolio-item fade-in delay-4">
+          <img src="images/portfolio3.jpg" alt="Construction Business Site" />
+          <p>Construction Business Site</p>
+        </div>
+      </div>
+      <a href="portfolio.html" class="btn fade-in delay-5">See Full Portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      &copy; 2025 PC Web Dev. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

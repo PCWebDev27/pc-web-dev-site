@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - PC Web Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle light/dark theme">🌙</button>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">PC Web Dev</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portfolio-section container">
+      <h2 class="section-title fade-in delay-1">Our Work</h2>
+
+      <div class="portfolio-slider fade-in delay-2">
+        <div class="portfolio-slide">
+          <img src="images/portfolio1.jpg" alt="Local Bakery Website" />
+          <p>Local Bakery Website</p>
+        </div>
+        <div class="portfolio-slide">
+          <img src="images/portfolio2.jpg" alt="Fitness Trainer Landing Page" />
+          <p>Fitness Trainer Landing Page</p>
+        </div>
+        <div class="portfolio-slide">
+          <img src="images/portfolio3.jpg" alt="Construction Business Site" />
+          <p>Construction Business Site</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      &copy; 2025 PC Web Dev. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.portfolio-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+      });
+    });
+  </script>
+</body>
+</html>
